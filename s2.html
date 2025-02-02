@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SEMESTER 2 Notes - KTU Notes Portal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+
+<header>
+    <h1>KTU Notes Portal</h1>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="#notes">Notes</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <!-- Notes Section for Semester 2 -->
+    <section id="notes">
+        <h2>SEMESTER 2 Notes</h2>
+        <div class="notes-list">
+            <!-- Course 1 -->
+            <div class="note-card">
+                <h3>Introduction to C Programming</h3>
+                <p>This note covers the basics of C programming, including variables, loops, and functions.</p>
+                <a href="s2-c-programming.pdf" target="_blank">Download</a>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="note-card">
+                <h3>CHEMISTRY</h3>
+                <p>Learn about data structures like arrays, linked lists, stacks, and queues in this course.</p>
+                <a href="s2-data-structures.pdf" target="_blank">Download</a>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="note-card">
+                <h3>LIFE SKILLS</h3>
+                <p>Topics include complex numbers, differential equations, and integration techniques.</p>
+                <a href="s2-math-ii.pdf" target="_blank">Download</a>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="note-card">
+                <h3>INTELLECTUAL PROPERTY RIGHT</h3>
+                <p>This course introduces the concepts of electrical circuits, resistors, and capacitors.</p>
+                <a href="s2-ee-basics.pdf" target="_blank">Download</a>
+            </div>
+
+            <!-- Course 5 -->
+            <div class="note-card">
+                <h3>FOUNTATION OF COMPUTING</h3>
+                <p>This course introduces the concepts of electrical circuits, resistors, and capacitors.</p>
+                <a href="s2-ee-basics.pdf" target="_blank">Download</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add New Course Form -->
+    <section id="add-course">
+        <h2>Add New Course to Semester 2</h2>
+        <form action="/add-semester2" method="POST">
+            <label for="course">New Course Name:</label>
+            <input type="text" id="course" name="course" required>
+            <button type="submit">Add Course</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 KTU Notes Portal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
+

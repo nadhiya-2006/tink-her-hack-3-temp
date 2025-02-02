@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 2 Details</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div id="semester2">
+            <h2>Semester 2</h2>
+            <div class="semester-details">
+                <h3>Course Details</h3>
+                <ul>
+                    {% for course in semester2_data %}
+                        <li>{{ course }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- Form to Add New Course -->
+            <form action="/add-semester2" method="POST">
+                <label for="course">New Course:</label>
+                <input type="text" id="course" name="course" required>
+                <button type="submit">Add Course</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+</html>
